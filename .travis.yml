@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+  - '10'
+  - '12'
+install:
+  - yarn install --ignore-engines
+  - yarn global add codecov
+before_script:
+  - yarn lerna run lint
+script:
+  - yarn lerna run test --stream
+  - codecov
+after_success:
+  - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+  - git remote set-url origin https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git
+  - git checkout master
+deploy:
+  provider: script
+  script: 'yarn lerna publish'
+  skip_cleanup: true
+  on:
+    node: '10'
+    branch: master
