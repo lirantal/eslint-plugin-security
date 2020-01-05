@@ -39,7 +39,7 @@
     "linters": {
       "**/*.js": [
         "prettier-standard",
-        "lerna run lint",
+        "eslint",
         "git add"
       ]
     }
