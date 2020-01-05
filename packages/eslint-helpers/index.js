@@ -1,7 +1,8 @@
 'use strict'
 
-const {getFunctionCallMetadata} = require('./src/utils')
+const {getFunctionCallMetadata, getRequiredMetadata} = require('./src/utils')
 
 module.exports = {
-  getFunctionCallMetadata
+  getFunctionCallMetadata,
+  getRequiredMetadata
 }
