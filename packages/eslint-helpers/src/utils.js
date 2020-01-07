@@ -41,8 +41,6 @@ module.exports.getFunctionCallMetadata = function getFunctionCallMetadata ({
 
   const currentNodeFunctionName = node.property.name
   const currentObjectName = node.object.name
-  console.log(currentNodeFunctionName)
-  console.log(currentObjectName)
   if (currentNodeFunctionName === functionName && matchVariableList.has(currentObjectName)) {
     if (node.parent && node.parent.arguments) {
       isFunctionCallFound = true
