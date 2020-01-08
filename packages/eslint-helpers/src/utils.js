@@ -4,7 +4,7 @@ module.exports.getRequiredMetadata = function getRequiredMetadata ({moduleName, 
   let isRequiredFound = false
   let declaredVarName
 
-  if (node.callee.name === 'require') {
+  if (node.callee && node.callee.name === 'require') {
     const requiredModule = node.arguments[0]
     if (literal === true) {
       if (requiredModule && requiredModule.type === 'Literal') {
