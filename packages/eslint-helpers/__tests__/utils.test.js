@@ -34,4 +34,33 @@ describe('Utils', () => {
       })
     })
   })
+
+  test('Assignment expression: var cp = a = require("something")', () => {
+    const linter = new eslint.Linter()
+
+    const code = 'var cp = a = require("child_process");'
+    const selector = "CallExpression[callee.name='require']"
+
+    let actual = null
+    linter.defineRule('test', context => ({
+      [selector] (node) {
+        actual = utils.getRequiredMetadata({
+          moduleName: 'child_process',
+          literal: true,
+          node: node
+        })
+      }
+    }))
+
+    linter.verify(code, {
+      rules: {
+        test: 'error'
+      }
+    })
+
+    expect(actual).toEqual({
+      isRequiredFound: true,
+      declaredVarName: 'a'
+    })
+  })
 })
