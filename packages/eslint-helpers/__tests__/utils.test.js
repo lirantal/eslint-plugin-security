@@ -38,7 +38,7 @@ describe('Utils', () => {
   test('Assignment expression: var cp = a = require("something")', () => {
     const linter = new eslint.Linter()
 
-    const code = 'var cp = a = require("child_process");'
+    const code = 'var cp = a = require(abc);'
     const selector = "CallExpression[callee.name='require']"
 
     let actual = null
@@ -59,7 +59,7 @@ describe('Utils', () => {
     })
 
     expect(actual).toEqual({
-      isRequiredFound: true,
+      isRequiredFound: false,
       declaredVarName: 'a'
     })
   })
