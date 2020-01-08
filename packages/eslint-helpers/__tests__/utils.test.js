@@ -63,4 +63,37 @@ describe('Utils', () => {
       declaredVarName: 'a'
     })
   })
+
+  describe('Match a function call()', () => {
+    test('Literal function call matching: cp.exec("ls")', () => {
+      const linter = new eslint.Linter()
+
+      const code = 'cp.exec("ls")'
+      const selector = "MemberExpression[property.name='exec']"
+
+      let actual = null
+      linter.defineRule('test', context => ({
+        [selector] (node) {
+          actual = utils.getFunctionCallMetadata({
+            matchVariableList: new Map([['cp']]),
+            functionName: 'exec',
+            node: node
+          })
+        }
+      }))
+
+      linter.verify(code, {
+        rules: {
+          test: 'error'
+        }
+      })
+
+      expect(actual).toEqual({
+        isFunctionCallFound: true,
+        argumentName: 'ls',
+        isLiteral: true,
+        argumentType: 'Literal'
+      })
+    })
+  })
 })
