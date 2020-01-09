@@ -1,6 +1,6 @@
 {
   "name": "eslint-helpers",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "ESLint utility helpers to parse and get metadata from AST objects",
   "main": "index.js",
   "engines": {
@@ -43,7 +43,6 @@
     "type": "git",
     "url": "https://github.com/lirantal/eslint-plugin-security.git"
   },
-  "dependencies": {},
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "babel-plugin-syntax-async-functions": "^6.13.0",
