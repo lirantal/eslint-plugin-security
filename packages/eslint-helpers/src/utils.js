@@ -45,10 +45,10 @@ module.exports.getFunctionCallMetadata = function getFunctionCallMetadata ({
   if (currentNodeFunctionName === functionName && matchVariableList.has(currentObjectName)) {
     if (node.parent && node.parent.arguments) {
       isFunctionCallFound = true
-      firstArgumentValue = node.parent.arguments[0].value
+      firstArgumentValue = node.parent.arguments[0] && node.parent.arguments[0].value
       allArguments = node.parent.arguments
-      isLiteral = node.parent.arguments[0].type === 'Literal'
-      argumentType = node.parent.arguments[0].type
+      isLiteral = node.parent.arguments[0] && node.parent.arguments[0].type === 'Literal'
+      argumentType = node.parent.arguments[0] && node.parent.arguments[0].type
     }
   }
 
