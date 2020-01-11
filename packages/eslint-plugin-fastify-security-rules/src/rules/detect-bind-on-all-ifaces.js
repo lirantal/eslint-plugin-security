@@ -37,6 +37,17 @@ module.exports = function (context) {
             return context.report(node, 'Found fastify server open to the world.')
           }
         }
+
+        // handle cases where listen function is provided an object config
+        if (allArguments[0] && allArguments[0].type === 'ObjectExpression') {
+          for (const nodeObject of allArguments[0].properties) {
+            if (nodeObject.key && nodeObject.key.name === 'host') {
+              if (nodeObject.value.value !== '127.0.0.1') {
+                return context.report(node, 'Found fastify server open to the world.')
+              }
+            }
+          }
+        }
       }
     }
   }

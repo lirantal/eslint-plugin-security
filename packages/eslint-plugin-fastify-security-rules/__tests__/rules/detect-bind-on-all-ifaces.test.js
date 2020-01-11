@@ -20,6 +20,14 @@ const invalidCode = {
       process.exit(1)
     }
   });
+  `,
+  listen_on_all_ifaces_object: `var fastify = require('fastify');
+  fastify.listen({ port: 3000, host: '0.0.0.0', backlog: 511 }, function(err) {
+    if (err) {
+      fastify.log.error(err)
+      process.exit(1)
+    }
+  });
   `
 }
 
@@ -32,6 +40,10 @@ tester.run(RULE_NAME, rule, {
   invalid: [
     {
       code: invalidCode['listen_on_all_ifaces_simple'],
+      errors: [{ message: errorMessages['foundFastifyListenToTheWorld'] }]
+    },
+    {
+      code: invalidCode['listen_on_all_ifaces_object'],
       errors: [{ message: errorMessages['foundFastifyListenToTheWorld'] }]
     }
   ]
