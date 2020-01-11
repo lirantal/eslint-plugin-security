@@ -35,7 +35,8 @@ module.exports.getFunctionCallMetadata = function getFunctionCallMetadata ({
   node
 }) {
   let isFunctionCallFound = false
-  let argumentName
+  let firstArgumentValue
+  let allArguments
   let isLiteral
   let argumentType
 
@@ -44,7 +45,8 @@ module.exports.getFunctionCallMetadata = function getFunctionCallMetadata ({
   if (currentNodeFunctionName === functionName && matchVariableList.has(currentObjectName)) {
     if (node.parent && node.parent.arguments) {
       isFunctionCallFound = true
-      argumentName = node.parent.arguments[0].value
+      firstArgumentValue = node.parent.arguments[0].value
+      allArguments = node.parent.arguments
       isLiteral = node.parent.arguments[0].type === 'Literal'
       argumentType = node.parent.arguments[0].type
     }
@@ -52,7 +54,8 @@ module.exports.getFunctionCallMetadata = function getFunctionCallMetadata ({
 
   return {
     isFunctionCallFound,
-    argumentName,
+    allArguments,
+    firstArgumentValue,
     isLiteral,
     argumentType
   }

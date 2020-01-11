@@ -88,12 +88,14 @@ describe('Utils', () => {
         }
       })
 
-      expect(actual).toEqual({
-        isFunctionCallFound: true,
-        argumentName: 'ls',
-        isLiteral: true,
-        argumentType: 'Literal'
-      })
+      expect(actual).toEqual(
+        expect.objectContaining({
+          isFunctionCallFound: true,
+          firstArgumentValue: 'ls',
+          isLiteral: true,
+          argumentType: 'Literal'
+        })
+      )
     })
   })
 })
