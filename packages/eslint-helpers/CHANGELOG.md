@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/lirantal/eslint-plugin-security/compare/eslint-helpers@1.1.0...eslint-helpers@1.2.0) (2020-01-11)
+
+
+### Features
+
+* **helpers:** refactor getFunctionCallMetadata for all arguments ([a86e0c0](https://github.com/lirantal/eslint-plugin-security/commit/a86e0c0e42e6958c41d01e1c006308f00aade799))
+
+
+
+
+
 # 1.1.0 (2020-01-09)
 
 
