@@ -7,6 +7,7 @@ const getFunctionCallMetadata = eslintHelpers.getFunctionCallMetadata
 module.exports = function (context) {
   const moduleName = 'fastify'
   const detectedVariableNames = new Set()
+  const localhostInterfaces = ['127.0.0.1', 'localhost']
 
   return {
     CallExpression: function (node) {
@@ -33,7 +34,10 @@ module.exports = function (context) {
         // handle cases where listen function is provided a literal argument
         if (allArguments[1]) {
           const listenArgument = allArguments[1]
-          if (listenArgument.type === 'Literal' && listenArgument.value !== '127.0.0.1') {
+          if (
+            listenArgument.type === 'Literal' &&
+            localhostInterfaces.indexOf(listenArgument.value) === -1
+          ) {
             return context.report(node, 'Found fastify server open to the world.')
           }
         }
@@ -42,7 +46,7 @@ module.exports = function (context) {
         if (allArguments[0] && allArguments[0].type === 'ObjectExpression') {
           for (const nodeObject of allArguments[0].properties) {
             if (nodeObject.key && nodeObject.key.name === 'host') {
-              if (nodeObject.value.value !== '127.0.0.1') {
+              if (localhostInterfaces.indexOf(nodeObject.value.value) === -1) {
                 return context.report(node, 'Found fastify server open to the world.')
               }
             }
