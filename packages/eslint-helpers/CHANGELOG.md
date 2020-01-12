@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/lirantal/eslint-plugin-security/compare/eslint-helpers@1.2.0...eslint-helpers@1.2.1) (2020-01-12)
+
+
+### Bug Fixes
+
+* **getfunctionmetadata:** only access property if exists ([18df3ea](https://github.com/lirantal/eslint-plugin-security/commit/18df3ea1ebdc34d2d5ee97d1dac1f0e1b8fa3847))
+
+
+
+
+
 # [1.2.0](https://github.com/lirantal/eslint-plugin-security/compare/eslint-helpers@1.1.0...eslint-helpers@1.2.0) (2020-01-11)
 
 

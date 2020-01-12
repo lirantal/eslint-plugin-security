@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/lirantal/eslint-plugin-security/compare/eslint-plugin-node-security-rules@1.1.0...eslint-plugin-node-security-rules@1.2.0) (2020-01-12)
+
+
+### Features
+
+* **detect_child_process_exec:** new rule ([a47b81c](https://github.com/lirantal/eslint-plugin-security/commit/a47b81c568c03b47e1dac37d008ef6c509f4d196))
+
+
+
+
+
 # 1.1.0 (2020-01-09)
 
 
