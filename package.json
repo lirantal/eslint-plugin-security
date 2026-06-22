@@ -8,7 +8,13 @@
     "url": "https://github.com/lirantal"
   },
   "scripts": {
-    "lerna": "lerna"
+    "lerna": "lerna",
+    "lint": "echo \"No lint step configured\"",
+    "build": "echo \"No build step configured\"",
+    "test": "echo \"No test step configured\"",
+    "lint:markdown": "markdownlint -c .github/.markdownlint.yml '**/**.md'",
+    "version": "changeset version",
+    "release": "changeset publish"
   },
   "license": "Apache-2.0",
   "repository": {
@@ -25,7 +31,10 @@
     "commitizen": "3.1.1",
     "cz-conventional-changelog": "2.1.0",
     "husky": "2.4.0",
-    "lint-staged": "^8.1.0"
+    "lint-staged": "^8.1.0",
+    "@changesets/changelog-github": "^0.6.0",
+    "@changesets/cli": "^2.31.0",
+    "markdownlint-cli": "0.45.0"
   },
   "husky": {
     "hooks": {
