@@ -10,7 +10,6 @@
   <a href="https://www.npmjs.org/package/eslint-plugin-security-nodejs"><img src="https://badgen.net/npm/v/eslint-plugin-security-nodejs" alt="npm version"/></a>
   <a href="https://www.npmjs.org/package/eslint-plugin-security-nodejs"><img src="https://badgen.net/npm/license/eslint-plugin-security-nodejs" alt="license"/></a>
   <a href="https://www.npmjs.org/package/eslint-plugin-security-nodejs"><img src="https://badgen.net/npm/dt/eslint-plugin-security-nodejs" alt="downloads"/></a>
-  <a href="https://travis-ci.org/lirantal/eslint-plugin-security-nodejs"><img src="https://badgen.net/travis/lirantal/eslint-plugin-security-nodejs" alt="build"/></a>
   <a href="https://codecov.io/gh/lirantal/eslint-plugin-security-nodejs"><img src="https://badgen.net/codecov/c/github/lirantal/eslint-plugin-security-nodejs" alt="codecov"/></a>
 </p>
 
