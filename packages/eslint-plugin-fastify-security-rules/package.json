@@ -64,7 +64,7 @@
     "jest": "30.4.2",
     "open-cli": "^9.0.0",
     "prettier-standard": "16.4.1",
-    "semantic-release": "25.0.5"
+    "semantic-release": "25.0.7"
   },
   "jest": {
     "testEnvironment": "node",

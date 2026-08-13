@@ -630,16 +630,16 @@
   resolved "https://registry.yarnpkg.com/@colors/colors/-/colors-1.5.0.tgz#bb504579c1cae923e6576a4f5da43d25f97bdbd9"
   integrity sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==
 
-"@commitlint/cli@21.2.0":
-  version "21.2.0"
-  resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-21.2.0.tgz#49ba69a3a9466e7d571012943914109ef7a52287"
-  integrity sha512-4GLVIhUaT3c3GBlQ0GB80/5H3xXdn/Tgw4lrsuoOQVDu2wl4Xw0GuzSar8xZKSMv4H3xaKaQXmvH91GmdyYBZA==
+"@commitlint/cli@21.2.1":
+  version "21.2.1"
+  resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-21.2.1.tgz#a1b4fa3d4366ac5d09e591218cb633f7fc031704"
+  integrity sha512-blsZGe29hJ72VGEFVl72IVYX+1vsfINpjA9yWQA6i7OKD/McGEOXg08sKIRKjFk4JvzhV/9n0l3i6NooPLTNfg==
   dependencies:
     "@commitlint/config-conventional" "^21.2.0"
     "@commitlint/format" "^21.2.0"
     "@commitlint/lint" "^21.2.0"
     "@commitlint/load" "^21.2.0"
-    "@commitlint/read" "^21.2.0"
+    "@commitlint/read" "^21.2.1"
     "@commitlint/types" "^21.2.0"
     tinyexec "^1.0.0"
     yargs "^18.0.0"
@@ -728,7 +728,7 @@
     conventional-changelog-angular "^9.0.0"
     conventional-commits-parser "^7.0.0"
 
-"@commitlint/read@^21.2.0":
+"@commitlint/read@^21.2.1":
   version "21.2.1"
   resolved "https://registry.yarnpkg.com/@commitlint/read/-/read-21.2.1.tgz#a39f19f73b45a604619831fdcbf93fa022feb870"
   integrity sha512-hUW7EJQnNTL0vPOmVMNK4CrnrNBN0nN+JJHReFkdHO5y4iyHeEmTBwuC15OCqUTjxWo7idnH1LftfpWVIaPWIA==
@@ -5367,9 +5367,9 @@ eslint-visitor-keys@^5.0.0, eslint-visitor-keys@^5.0.1:
   integrity sha512-tD40eHxA35h0PEIZNeIjkHoDR4YjjJp34biM0mDvplBe//mB+IHCqHDGV7pxF+7MklTvighcCPPZC7ynWyjdTA==
 
 eslint@^10.5.0:
-  version "10.6.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-10.6.0.tgz#e1b4059c582be950c7088c9b55f984738b243c27"
-  integrity sha512-6lVbcqSodALYo+4ELD0heG6lFiFxnLMuLkiMi2qV8LMp54N8tE8FT1GMH+ev4Ti00nFjNze2+Su6DsV5OQW3Dg==
+  version "10.7.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-10.7.0.tgz#cd3b8022f3b1e3b183760d90dfc58e9d3644106b"
+  integrity sha512-GVTD7s1vdIl6UYvAfriOPeY1Df8LIZjfofLvHwde+erDHGGuHyuM6xoxRxmHiebhYuD2p1vN4wWh0XzPARSGDQ==
   dependencies:
     "@eslint-community/eslint-utils" "^4.8.0"
     "@eslint-community/regexpp" "^4.12.2"
@@ -11580,10 +11580,10 @@ safe-regex@^1.1.0:
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-semantic-release@25.0.5:
-  version "25.0.5"
-  resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-25.0.5.tgz#67be786556e40e8e81c591a12f38877f1eee6052"
-  integrity sha512-mn61SUJwtM8ThrWn2WmgLVpwVJeG/hPSupua1psdMoufmwRIPyvRLkRkL0JDXkP67OntlLWUYnBnfVc8EDO3/g==
+semantic-release@25.0.7:
+  version "25.0.7"
+  resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-25.0.7.tgz#299370ea9f1c1de21e053855232dcfd258f17fd9"
+  integrity sha512-fFiUD7LNFI0TOGkc49WDHUX4GYKrOMDKct5ReSB1EJCZiPsPdbIPIJGys1xb2ILpK1v9JMsRkjJQgTRpbr7DgQ==
   dependencies:
     "@semantic-release/commit-analyzer" "^13.0.1"
     "@semantic-release/error" "^4.0.0"
