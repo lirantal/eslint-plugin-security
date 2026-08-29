@@ -6,13 +6,6 @@
   ESLint plugin for Node.js security rules collection
 </p>
 
-<p align="center">
-  <a href="https://www.npmjs.org/package/eslint-plugin-security-nodejs"><img src="https://badgen.net/npm/v/eslint-plugin-security-nodejs" alt="npm version"/></a>
-  <a href="https://www.npmjs.org/package/eslint-plugin-security-nodejs"><img src="https://badgen.net/npm/license/eslint-plugin-security-nodejs" alt="license"/></a>
-  <a href="https://www.npmjs.org/package/eslint-plugin-security-nodejs"><img src="https://badgen.net/npm/dt/eslint-plugin-security-nodejs" alt="downloads"/></a>
-  <a href="https://codecov.io/gh/lirantal/eslint-plugin-security-nodejs"><img src="https://badgen.net/codecov/c/github/lirantal/eslint-plugin-security-nodejs" alt="codecov"/></a>
-</p>
-
 # About
 
 eslint-plugin-security-nodejs
