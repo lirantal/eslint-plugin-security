@@ -454,9 +454,9 @@
     "@changesets/types" "^7.0.0"
 
 "@changesets/cli@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@changesets/cli/-/cli-3.0.0.tgz#f45c904162b221cb3a9ec46637750d79f5e1fa12"
-  integrity sha512-V7Gm+GP5OT3mJinMI2YcJD/JyO/a4WChnaMCCzTRhWHgu1zhtsyY7zCjP6n5W6zsgSjJKs+yPmvtREvE0F2g8A==
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@changesets/cli/-/cli-3.0.1.tgz#a6a3d6285a56f4c65f4920ff26a299b272bda26e"
+  integrity sha512-3IVpRSgiKDj2aRbBHKtWTXSRH2/iR3bWxau9iQUoEsZjDhRIj9nhl90k7FWMxZAJvLgJBbgMq8+qS0xQsenYsQ==
   dependencies:
     "@changesets/apply-release-plan" "^8.0.0"
     "@changesets/assemble-release-plan" "^7.0.0"
@@ -469,7 +469,7 @@
     "@changesets/read" "^1.0.0"
     "@changesets/should-skip-package" "^1.0.0"
     "@changesets/types" "^7.0.0"
-    "@changesets/write" "^1.0.0"
+    "@changesets/write" "^1.0.1"
     "@clack/prompts" "^1.7.0"
     "@manypkg/get-packages" "^3.1.0"
     "@pnpm/deps.graph-sequencer" "^1100.0.1"
@@ -568,7 +568,7 @@
   resolved "https://registry.yarnpkg.com/@changesets/types/-/types-7.0.0.tgz#60883fa02b6dbe1b68b025760ff4f7386c3da8c7"
   integrity sha512-c5GoiQyt3pxiXjrWSNoP8/GRf4kG+VnKzovx1OQM8dYYALlSwgedmkPmJ+ZqGxqwg9D3Bkj85Uo4KLd5BN3A0w==
 
-"@changesets/write@^1.0.0":
+"@changesets/write@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@changesets/write/-/write-1.0.1.tgz#4aa7dcb7ff976710775aef2d9db3b18bfd06c34c"
   integrity sha512-q/ThtP9gcnEP6xlv7LrY26C2mHqdGBti/MmOVngt/M/oIGYkssmQGxPK9WzBNt2juVcH/vml2WQ+ra8LXYOTaA==
@@ -4367,10 +4367,10 @@ conventional-commits-filter@^5.0.0:
   resolved "https://registry.yarnpkg.com/conventional-commits-filter/-/conventional-commits-filter-5.0.0.tgz#72811f95d379e79d2d39d5c0c53c9351ef284e86"
   integrity sha512-tQMagCOC59EVgNZcC5zl7XqO30Wki9i9J3acbUvkaosCT6JX3EeFwJD7Qqp4MCikRnzS18WXV3BLIQ66ytu6+Q==
 
-conventional-commits-parser@7.1.0:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/conventional-commits-parser/-/conventional-commits-parser-7.1.0.tgz#1ce5fb1466b9b74ef68c861d37ca96179055c0f1"
-  integrity sha512-DPp6hkUjvwIivxbkrTiLXeRswNv1A/4GFA2X6scXma0AMa9632V3TwxmrlkUIEtUktiM3Ln+RrSH2xlP3/jUTw==
+conventional-commits-parser@7.1.2, conventional-commits-parser@^7.0.0, conventional-commits-parser@^7.1.0:
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/conventional-commits-parser/-/conventional-commits-parser-7.1.2.tgz#4dca0779b338bab96fe994e864dfedf3c1908b03"
+  integrity sha512-O+x4N2yH+ijvqWlIyTHsXTAP+algNWgGbjY2duCe8w2vUMvUB95cLRslCPfTMQyLAKlet3bhZTdu6ozn4M+QJQ==
   dependencies:
     "@simple-libs/stream-utils" "^2.0.0"
     argue-cli "^3.1.0"
@@ -4382,14 +4382,6 @@ conventional-commits-parser@^6.0.0:
   dependencies:
     "@simple-libs/stream-utils" "^1.2.0"
     meow "^13.0.0"
-
-conventional-commits-parser@^7.0.0, conventional-commits-parser@^7.1.0:
-  version "7.1.2"
-  resolved "https://registry.yarnpkg.com/conventional-commits-parser/-/conventional-commits-parser-7.1.2.tgz#4dca0779b338bab96fe994e864dfedf3c1908b03"
-  integrity sha512-O+x4N2yH+ijvqWlIyTHsXTAP+algNWgGbjY2duCe8w2vUMvUB95cLRslCPfTMQyLAKlet3bhZTdu6ozn4M+QJQ==
-  dependencies:
-    "@simple-libs/stream-utils" "^2.0.0"
-    argue-cli "^3.1.0"
 
 conventional-recommended-bump@12.1.0:
   version "12.1.0"
@@ -5254,9 +5246,9 @@ eslint-visitor-keys@^5.0.0, eslint-visitor-keys@^5.0.1:
   integrity sha512-tD40eHxA35h0PEIZNeIjkHoDR4YjjJp34biM0mDvplBe//mB+IHCqHDGV7pxF+7MklTvighcCPPZC7ynWyjdTA==
 
 eslint@^10.5.0:
-  version "10.8.1"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-10.8.1.tgz#fb37d514c19b6dd5b2d6b70169fd26fddfa97967"
-  integrity sha512-wqA7W2jbsC/BnV9Iv1UZpKVFkO1AdNoSmYW8NWG4HNOBbkAMvIqDZ27pI2f07dqn583NcIC44ckjAcOXDL1QbQ==
+  version "10.9.1"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-10.9.1.tgz#409da5c41a5536d5a849f8555a18ca7ef1eb963b"
+  integrity sha512-9VaAkDURekixUQJy0oJYl2DcN6oKMfxay7XzaGYAWQwsb6qfKf+x76R2k1L8kb1boc+FyCAaTA9GmiKaaiaF+A==
   dependencies:
     "@eslint-community/eslint-utils" "^4.8.0"
     "@eslint-community/regexpp" "^4.12.2"
@@ -7907,9 +7899,9 @@ launch-editor@^2.14.1:
     shell-quote "^1.8.4"
 
 lerna@^10.0.0:
-  version "10.0.0"
-  resolved "https://registry.yarnpkg.com/lerna/-/lerna-10.0.0.tgz#3192ce4aca49a9bcbe9fdcaf025dea48e36895bf"
-  integrity sha512-U1Rkz2lMZEGstg7h6vw2LfuGNTomXANZ+mX80+3pR0L2RWWcXI/gZJya9EDq4wTY+1AoUzhNNUnlAEWdFugisw==
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/lerna/-/lerna-10.0.1.tgz#1d205fd77f7015f0811f0b83d4793e84e0dca724"
+  integrity sha512-ibmMaBmH/sR2HpZzgvpEI5/6bCgMp0AISIFZ/cQcCzRVH2EgPapBYHXS6A6NgI6vRJNE4pgnxQbNiSq00HVSjA==
   dependencies:
     "@npmcli/arborist" "9.1.6"
     "@npmcli/package-json" "7.0.2"
@@ -7923,7 +7915,7 @@ lerna@^10.0.0:
     conventional-changelog "8.1.0"
     conventional-changelog-angular "9.2.1"
     conventional-commits-filter "6.0.1"
-    conventional-commits-parser "7.1.0"
+    conventional-commits-parser "7.1.2"
     conventional-recommended-bump "12.1.0"
     cosmiconfig "9.0.0"
     dedent "1.5.3"
@@ -7954,7 +7946,7 @@ lerna@^10.0.0:
     signal-exit "3.0.7"
     ssri "12.0.0"
     string-width "^4.2.3"
-    tar "7.5.20"
+    tar "7.5.22"
     tinyglobby "0.2.12"
     validate-npm-package-license "3.0.4"
     validate-npm-package-name "6.0.2"
@@ -11807,10 +11799,10 @@ tar-stream@2.2.0:
     inherits "^2.0.3"
     readable-stream "^3.1.1"
 
-tar@7.5.20, tar@^7.4.3, tar@^7.5.1, tar@^7.5.19, tar@^7.5.4:
-  version "7.5.20"
-  resolved "https://registry.yarnpkg.com/tar/-/tar-7.5.20.tgz#37a65aa911cbd69864002e14bf8a926a5551e240"
-  integrity sha512-9FcyK4PA6+WbzlTM9WhQm6vB5W7cP7dUiPsv1g7YDwEQnQ1CGpK3MGlKk/ITVWMk05kHZuBhmVhiv8LZoy/PFQ==
+tar@7.5.22, tar@^7.4.3, tar@^7.5.1, tar@^7.5.19, tar@^7.5.4:
+  version "7.5.22"
+  resolved "https://registry.yarnpkg.com/tar/-/tar-7.5.22.tgz#a696f998136e71487dc3f869a85bba2c67971ba9"
+  integrity sha512-MFO/QzvtAOmJbkhOaCTvbGcFN9L9b+JunIsDwaKljSOdcLMea3NJ1k9Usz/rjdfSXTq4dfzfeS7W4p4YOAAHeA==
   dependencies:
     "@isaacs/fs-minipass" "^4.0.0"
     chownr "^3.0.0"
